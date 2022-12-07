@@ -1,0 +1,11 @@
+{
+    "policyTables": [
+        {
+            "table1": "Basic Details",
+            "table2": "Policy Details",
+            "table3": "Premium Details",
+            "table4": "Self Commission Details",
+            "table5": "IRDA Commision Details"
+        }
+    ]
+}
