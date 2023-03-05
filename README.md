@@ -1,3 +1,7 @@
+Step 1: Please install nodeJs version = 18.14.2
+        npm version = 9.6.0
+Step 2: Run "npm install --save" to install Node Modules
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
