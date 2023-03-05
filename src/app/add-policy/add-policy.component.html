@@ -1,5 +1,13 @@
 <p>add-policy works!</p>
+<div class="main">
+    <div class="header">
+        <button pButton type="button" label="Home" icon="pi pi-home" class="p-button-outlined p-button-success"
+            iconPos="left" (click)="navigateToHome()"></button>
+    </div>
 
-<p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name"
-    [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true" 
-    placeholder="Select a Country"></p-dropdown>
+    <div class="content">
+        <p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name"
+            [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true"
+            placeholder="Select a Country"></p-dropdown>
+    </div>
+</div>

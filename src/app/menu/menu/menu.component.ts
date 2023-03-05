@@ -17,7 +17,7 @@ export class MenuComponent {
                       label: 'New', 
                       icon: 'pi pi-fw pi-plus',
                       items: [
-                          {label: 'Project'},
+                          {label: 'Policy', routerLink:'/addPolicy'},
                           {label: 'Other'},
                       ]
                   },

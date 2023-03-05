@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import addPolicyData from '../../assets/datafiles/addPolicy.json';
+import { Router } from '@angular/router';
 
 @Component({
   selector: '[app-add-policy]',
@@ -12,7 +13,7 @@ export class AddPolicyComponent {
   selectedCountry: string;
   countries: any[];
 
-  constructor() {  }
+  constructor(private router: Router) {  }
 
   ngOnInit(){
 
@@ -35,6 +36,9 @@ export class AddPolicyComponent {
     ];
 
 
+  }
+  navigateToHome(){
+    this.router.navigate(['/dashboard']);
   }
 
   // createTableColumns(){

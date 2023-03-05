@@ -5,6 +5,7 @@ import { AddPolicyComponent } from './add-policy.component';
 import {DropdownModule} from 'primeng/dropdown';
 import {AccordionModule} from 'primeng/accordion';
 import { FormsModule } from '@angular/forms';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
     DropdownModule,
     AccordionModule,
     FormsModule,
+    ButtonModule,
   ],
   exports: [
     AddPolicyComponent
