@@ -1,0 +1,17 @@
+/* .p-inputgroup .p-inputtext, .p-fluid .p-inputgroup .p-inputtext, .p-inputgroup .p-inputwrapper, .p-inputgroup .p-inputwrapper>.p-component {
+    flex: 1 1 auto;
+    width: 100%;
+} */
+/* td.content .p-element div.p-dropdown .p-inputgroup .p-inputwrapper>.p-component  {
+    width: 100%;
+} */
+/* .content{
+ color: red;
+ width: 100%;
+} */
+
+/* .p-dropdown,.content .p-component,.content .p-dropdown-clearable */
+:host ::ng-deep td.dropdown div.p-dropdown {
+        min-width: 100%;
+    }    
+

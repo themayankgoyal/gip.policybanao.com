@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import addPolicyData from '../../assets/datafiles/addPolicy.json';
 import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: '[app-add-policy]',
@@ -12,8 +14,10 @@ export class AddPolicyComponent {
   addPolicyTable: any[];
   selectedCountry: string;
   countries: any[];
+  items: any[];
+  form: FormGroup;
 
-  constructor(private router: Router) {  }
+  constructor(private router: Router, private fb:FormBuilder) {  }
 
   ngOnInit(){
 
@@ -21,6 +25,11 @@ export class AddPolicyComponent {
     debugger
     // var json = JSON.stringify(addPolicyData.policyTables);
     this.addPolicyTable = JSON.parse(JSON.stringify(addPolicyData.policyTables));
+    this.createItems();
+
+    this.form = this.fb.group({
+      fName:[null, Validators.required]
+    })
 
     this.countries = [
       {name: 'Australia', code: 'AU'},
@@ -39,6 +48,17 @@ export class AddPolicyComponent {
   }
   navigateToHome(){
     this.router.navigate(['/dashboard']);
+  }
+
+  createItems(){
+    this.items = [
+      {label: 'General Information'},
+      {label: 'Policy Information'},
+      {label: 'Schedule of Premum'},
+      {label: 'Commission Calculation'},
+      {label: 'Documents Upload'}
+      
+  ];
   }
 
   // createTableColumns(){

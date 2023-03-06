@@ -1,13 +1,56 @@
 <p>add-policy works!</p>
 <div class="main">
-    <div class="header">
+    <!-- <div class="header">
         <button pButton type="button" label="Home" icon="pi pi-home" class="p-button-outlined p-button-success"
             iconPos="left" (click)="navigateToHome()"></button>
-    </div>
+    </div> -->
+    
+<p-steps [model]="items"></p-steps>
+    <p-card-content class="p-card-content-content">
+        <table>
+            <tr>
+                <td class="p-inputgroup dropdown" >
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    <p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name"
+                        [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true"
+                        placeholder="Vehicle Type"></p-dropdown>
+                </td>
+                <td class="p-inputgroup dropdown" >
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    <p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name"
+                        [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true"
+                        placeholder="Vehicle Name"></p-dropdown>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                        <input type="text" pInputText placeholder="Customer Name">
+                    </div>
+                </td>
+                <td>
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-car"></i></span>
+                        <input type="text" pInputText placeholder="Vehicle Number">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-car"></i></span>
+                        <input type="text" pInputText placeholder="Chasis Number">
+                    </div>
+                </td>
+                <td>
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-mobile"></i></span>
+                        <input type="text" pInputText placeholder="Mobile Number">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </p-card-content>
 
-    <div class="content">
-        <p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name"
-            [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true"
-            placeholder="Select a Country"></p-dropdown>
-    </div>
 </div>
