@@ -8,6 +8,8 @@ import {AccordionModule} from 'primeng/accordion';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
+import {CalendarModule} from 'primeng/calendar';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {TableModule} from 'primeng/table';
     ButtonModule,
     StepsModule,
     TableModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CalendarModule,
+    InputTextModule
   ],
   exports: [
     AddPolicyComponent

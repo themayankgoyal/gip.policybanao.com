@@ -1,17 +1,58 @@
-/* .p-inputgroup .p-inputtext, .p-fluid .p-inputgroup .p-inputtext, .p-inputgroup .p-inputwrapper, .p-inputgroup .p-inputwrapper>.p-component {
-    flex: 1 1 auto;
-    width: 100%;
-} */
-/* td.content .p-element div.p-dropdown .p-inputgroup .p-inputwrapper>.p-component  {
-    width: 100%;
-} */
-/* .content{
- color: red;
- width: 100%;
-} */
 
-/* .p-dropdown,.content .p-component,.content .p-dropdown-clearable */
-:host ::ng-deep td.dropdown div.p-dropdown {
-        min-width: 100%;
-    }    
+.body {
+    background-color:  whitesmoke
+}
+.grid-container {
+    display: grid;
+    /* background-color: bisque; */
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #91a0aa;
+    margin: 2rem 5rem;
+    background-color:white;
+    border-radius: 6px;
 
+}
+.labels {
+    font-size: larger;
+}
+.customer-details {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 0%;
+   
+}
+
+.policy-info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.vehicle-details {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.agency-details {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.table-heading {
+    /* border: groove; */
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.table-heading>h2 {
+    /* border: groove; */
+    margin: 0px;
+    padding: 0px 0px 0px 8px;
+}
+
+:host ::ng-deep div.grid-item.p-inputgroup {
+
+   padding: 0.5rem;
+   margin: 0.5rem;
+    
+}

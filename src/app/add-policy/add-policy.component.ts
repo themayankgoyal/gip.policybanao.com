@@ -32,8 +32,8 @@ export class AddPolicyComponent {
     })
 
     this.countries = [
-      {name: 'Australia', code: 'AU'},
-      {name: 'Brazil', code: 'BR'},
+      {name: 'Alto', code: 'AU'},
+      {name: 'Xcent', code: 'BR'},
       {name: 'China', code: 'CN'},
       {name: 'Egypt', code: 'EG'},
       {name: 'France', code: 'FR'},
