@@ -3,11 +3,9 @@ import { CommonModule } from '@angular/common';
 import {DropdownModule} from 'primeng/dropdown';
 import {AccordionModule} from 'primeng/accordion';
 import { FormsModule } from '@angular/forms';
-
 import { DashboardComponent } from './dashboard/dashboard.component';
-
 import { AddPolicyModule } from '../add-policy/add-policy.module';
-import { MenuModule } from '../menu/menu.module';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +17,7 @@ import { MenuModule } from '../menu/menu.module';
     AccordionModule,
     FormsModule,
     AddPolicyModule,
-    MenuModule
+  
   ],
   exports: [
     DashboardComponent

@@ -7,12 +7,13 @@ import { FooterComponent } from './_shared/footer.component';
 
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AppRoutingModule } from './app-routing.module';
-
+import {MenuModule} from './menu/menu.module'
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
+   
   ],
 
   imports: [
@@ -20,6 +21,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     DashboardModule,
     AppRoutingModule,
+    MenuModule
   ],
 
   providers: [],

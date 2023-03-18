@@ -11,7 +11,8 @@ import { Component } from '@angular/core';
     </style>
 
   <div> 
-    <img src="../assets/images/logo.png" alt="gip.policybanao.com" width="180" height="70">
+    <!-- <h1>gip.policybanao.com</h1> -->
+    <img src="../assets/images/logo.png" alt="gip.policybanao.com" width="240" height="80">
   </div>`,
 })
 

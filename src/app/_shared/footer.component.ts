@@ -9,7 +9,9 @@ import { Component } from '@angular/core';
         min-height: 3rem;
         max-height: 4.37rem;
         text-align: center;
-        align-items:center ;
+        align-items:center;
+        padding: 0%;
+        margin: 0%;
       }
       h3{
         padding-top: 1.1rem;
@@ -18,7 +20,7 @@ import { Component } from '@angular/core';
     </style>
 
   <div> 
-    <h3>@Copyright - Policy Banao since@1969</h3>
+    <h3>@copyright policybanao.com 2023</h3>
   </div>`,
 })
 

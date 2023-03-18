@@ -1,6 +1,6 @@
 
 .body {
-    background-color:  whitesmoke
+    background-color:  whitesmoke;
 }
 .grid-container {
     display: grid;
@@ -9,7 +9,7 @@
     padding: 10px;
     box-shadow: 2px 2px 5px #91a0aa;
     margin: 2rem 5rem;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     border-radius: 6px;
 
 }

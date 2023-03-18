@@ -1,0 +1,37 @@
+.sideMenu {
+    border: 1px solid black;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sideMenu {
+    grid-area: sideMenu;
+    
+}
+
+.appBody {
+    grid-area: appBody;
+    background-color: whitesmoke !important;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.gridContainer {
+
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'sideMenu appBody appBody appBody appBody appBody'
+        'footer footer footer footer footer footer';
+}
+
+.gridContainer>div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: left;
+    /* padding: 20px 0; */
+    /* font-size: 30px; */
+}

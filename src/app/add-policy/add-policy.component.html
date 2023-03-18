@@ -1,6 +1,10 @@
 <div class="body">
-    <p>add-policy works!</p>
     <div class="grid-container">
+        <div>
+            <h1>Add New Policy</h1>
+            <br>
+            <br>
+        </div>
         <div class="table-heading">
             <h2>Customer Details</h2>
         </div>
@@ -12,17 +16,17 @@
             </div>
             <div class="grid-item p-inputgroup">
                 <label for="MobileNumber" class="labels p-inputgroup-addon">Mobile Number</label>
-                <input type="text" pInputText  placeholder="999-999-999">
+                <input type="text" pInputText placeholder="999-999-999">
                 <span class="p-inputgroup-addon"><i class="pi pi-mobile"></i></span>
             </div>
             <div class="grid-item p-inputgroup">
                 <label for="EmailId" class="labels p-inputgroup-addon">Email ID</label>
-                <input type="text" pInputText  placeholder="xyz@gmail.com">
+                <input type="text" pInputText placeholder="xyz@gmail.com">
                 <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
             </div>
             <div class="grid-item p-inputgroup">
                 <label for="Address" class="labels p-inputgroup-addon">Address</label>
-                <input type="text" pInputText  placeholder="House Number, Street/Area, City, State, Postal Code">
+                <input type="text" pInputText placeholder="House Number, Street/Area, City, State, Postal Code">
                 <span class="p-inputgroup-addon"><i class="pi pi-home"></i></span>
             </div>
         </div>
@@ -69,6 +73,22 @@
             <div class="grid-item p-inputgroup">
                 <span class="p-inputgroup-addon"><i class="pi pi-id-card"></i></span>
                 <input type="text" pInputText [style]="{'width': '100%'}" placeholder="Registration">
+            </div>
+            <div class="grid-item p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-id-card"></i></span>
+                <input type="text" pInputText [style]="{'width': '100%'}" placeholder="Fuel">
+            </div>
+            <div class="grid-item p-inputgroup dropdown">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                <p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name"
+                    [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true" [style]="{'width': '100%'}"
+                    placeholder="State"></p-dropdown>
+            </div>
+            <div class="grid-item p-inputgroup dropdown">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                <p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name"
+                    [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true" [style]="{'width': '100%'}"
+                    placeholder="RTO"></p-dropdown>
             </div>
         </div>
         <div class="table-heading">
@@ -126,7 +146,7 @@
                 <span class="p-inputgroup-addon"><i class="pi pi-calendar"></i></span>
                 <p-calendar placeholder="End Date"></p-calendar>
             </div>
-    
+
             <div class="grid-item p-inputgroup">
                 <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
                 <input type="text" pInputText [style]="{'width': '100%'}" placeholder="Policy Duration">
@@ -137,9 +157,6 @@
                     [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true" [style]="{'width': '100%'}"
                     placeholder="Insurance Type"></p-dropdown>
             </div>
-    
-    
         </div>
     </div>
-    
 </div>

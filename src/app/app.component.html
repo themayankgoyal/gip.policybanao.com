@@ -1,5 +1,16 @@
-<app-header></app-header>
-
-<!-- <app-dashboard></app-dashboard> -->
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="gridContainer">
+    
+    <div class="header">
+        <app-header></app-header>
+    </div>
+    <div class="sideMenu">
+        <app-menu></app-menu>
+    </div>
+    <!-- <app-dashboard></app-dashboard> -->
+    <div class="appBody">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="footer">
+        <app-footer></app-footer>
+    </div>
+</div>
