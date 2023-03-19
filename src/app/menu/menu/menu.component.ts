@@ -44,6 +44,32 @@ export class MenuComponent {
                     { label: 'List Parent SP',icon: 'pi pi-fw pi-list' },
                     { label: 'List SP Commission',icon: 'pi pi-fw pi-list' },
                 ]
+            },
+            {
+                label: 'Manage Vehicle',
+                icon: 'pi pi-fw pi-bars',
+                items: [
+                    { label: 'Add Vehicle Type',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Vehicle Segment',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Vehicle Make',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Vehicle Model',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Vehicle Fuel',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Vehicle CC',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Vehicle GVW',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Vehicle Seating Capacity',icon: 'pi pi-fw pi-pencil' },
+                ]
+            },
+            {
+                label: 'Manage',
+                icon: 'pi pi-fw pi-bars',
+                items: [
+                    { label: 'Add State',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add RTO',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Insurer',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Portal ID',icon: 'pi pi-fw pi-pencil' },
+                    { label: 'Add Agency',icon: 'pi pi-fw pi-pencil' },
+                    
+                ]
             }
         ];
     }

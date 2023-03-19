@@ -1,26 +1,29 @@
-
 .body {
-    background-color:  whitesmoke;
+    background-color: whitesmoke;
 }
+
 .grid-container {
     display: grid;
-    /* background-color: bisque; */
-    border: 1px solid;
+    border: 1px;
     padding: 10px;
-    box-shadow: 2px 2px 5px #91a0aa;
+    -moz-box-shadow: 0 0 5px #999;
+    -webkit-box-shadow: 0 0 5px #999;
+    box-shadow: 0 0 5px #999;
     margin: 2rem 5rem;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 6px;
 
 }
+
 .labels {
     font-size: larger;
 }
+
 .customer-details {
     display: grid;
     grid-template-columns: auto auto;
     margin-left: 0%;
-   
+
 }
 
 .policy-info {
@@ -52,7 +55,7 @@
 
 :host ::ng-deep div.grid-item.p-inputgroup {
 
-   padding: 0.5rem;
-   margin: 0.5rem;
-    
+    padding: 0.5rem;
+    margin: 0.5rem;
+
 }

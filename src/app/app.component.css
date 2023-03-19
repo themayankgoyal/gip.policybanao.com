@@ -1,13 +1,10 @@
-.sideMenu {
-    border: 1px solid black;
-}
-
 .header {
     grid-area: header;
 }
 
 .sideMenu {
     grid-area: sideMenu;
+    
     
 }
 
